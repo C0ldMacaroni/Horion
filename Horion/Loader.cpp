@@ -320,7 +320,7 @@ DWORD WINAPI start(LPVOID lpParam) {
 		logF("Failed to open process, error-code: %i", GetLastError());
 		return 1;
 	}
-	gameModule = mem.GetModule(L"Minecraft.Windows.exe");  // Get Module for Base Address
+	gameModule = mem.GetModule(L"Minecraft Education Edition.lnk");  // Get Module for Base Address
 
 	MH_Initialize();
 	GameData::initGameData(gameModule, &mem, (HMODULE)lpParam);
